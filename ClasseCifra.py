@@ -1,11 +1,13 @@
 class CifraCesar(object):
 
     def __init__(self, menssagem):
-        self.codifica = ("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", )  # Tupla para Alfabeto
+        # Tupla para Alfabeto
+        self.codifica = (
+            "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", )
         self.lista = []  # Lista iniciada vazia
-        self.menssagem = menssagem #Menssagem enviada
+        self.menssagem = menssagem  # Menssagem enviada
 
-    def encontra(self): #Encontra a letra e sua posição
+    def encontra(self):  # Encontra a letra e sua posição
         for x in self.menssagem:
             cont = 0
             if (x == self.codifica[0][cont]):
@@ -18,7 +20,7 @@ class CifraCesar(object):
                     cont += 1
                 self.encripita(cont)
 
-    def encripita(self, letraen): #Faz a encriptação
+    def encripita(self, letraen):  # Faz a encriptação
         numero = letraen
         if (numero == " "):
             self.lista.append("#")
@@ -54,11 +56,11 @@ class CifraCesar(object):
             contado += 1
         print(palavra)
 
+
 x = CifraCesar("geovane cavalcante")
-x.encontra()                #Cifranco
+x.encontra()  # Cifranco
 x.apresentar()
 
 x = CifraCesar("jhrydqh#fdydofdqwh")
-x.encontra2()               #Decifrando
+x.encontra2()  # Decifrando
 x.apresentar()
-
