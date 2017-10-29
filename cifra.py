@@ -16,18 +16,18 @@ def encontra():
     for x in menssagem:
         cont = 0
         if (x == codifica[0][cont]):
-            descobreposição(codifica[0][cont])
+            descobreposicao(codifica[0][cont])
         elif (x == " "):
             a = " "
-            descobreposição(a)
+            descobreposicao(a)
         else:
             while (x != codifica[0][cont]):
                 cont += 1
-            descobreposição(codifica[0][cont])
+            descobreposicao(codifica[0][cont])
 
 # Encontra a posição da letra no alfabeto
 
-def descobreposição(letra):
+def descobreposicao(letra):
     for x in letra:
         cont = 0
         if (x == codifica[0][cont]):
