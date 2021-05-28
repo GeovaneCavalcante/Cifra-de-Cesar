@@ -7,6 +7,7 @@ class CifraCesar(object):
         self.lista = []  # Lista iniciada vazia
         self.menssagem = menssagem  # Menssagem enviada
 
+
     def encontra(self):  # Encontra a letra e sua posição
         for x in self.menssagem:
             cont = 0
