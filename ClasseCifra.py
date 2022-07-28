@@ -57,7 +57,7 @@ class CifraCesar(object):
         print(palavra)
 
 
-x = CifraCesar("geovane cavalcante")
+x = CifraCesar("geovane feitosa cavalcante")
 x.encontra()  # Cifranco
 x.apresentar()
 
